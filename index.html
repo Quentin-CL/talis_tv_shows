@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My TV Show</title>
+    <link rel="stylesheet" href="assets/libs/css/all.min.css" />
+    <link rel="stylesheet" href="assets/libs/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="assets/libs/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Part 1 : General presentation -->
+      <section id="presentation">
+        <div class="overlay"></div>
+
+        <div class="input-group">
+          <input type="text" class="form-control show-query" placeholder="Tv Show" aria-label="Tv Show" aria-describedby="btn-show-query" />
+          <button class="btn btn-outline-light" type="button" id="btn-show-query">Search</button>
+        </div>
+
+        <div class="presentation-container">
+          <div class="tv-show-prop"></div>
+
+          <div class="star-rating" title="70%">
+            <div class="back-stars">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+
+              <div class="front-stars" style="width: 70%">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Part 2 : Detailed presentation -->
+      <section id="details">
+        <div>
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-episodes-tab" data-bs-toggle="tab" data-bs-target="#nav-episodes" type="button" role="tab" aria-controls="nav-episodes" aria-selected="true">
+                Episodes
+              </button>
+              <button class="nav-link disabled" id="nav-cast-tab" data-bs-toggle="tab" data-bs-target="#nav-cast" type="button" role="tab" aria-controls="nav-cast" aria-selected="false">Cast</button>
+              <button class="nav-link disabled" id="nav-more-tab" data-bs-toggle="tab" data-bs-target="#nav-more" type="button" role="tab" aria-controls="nav-more" aria-selected="false">More</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-episodes" role="tabpanel" aria-labelledby="nav-episodes-tab" tabindex="0">
+              <div class="seasons-switch">
+                <p>Seasons</p>
+              </div>
+              <div class="episodes-container"></div>
+            </div>
+            <div class="tab-pane fade" id="nav-cast" role="tabpanel" aria-labelledby="nav-cast-tab" tabindex="0">tuut</div>
+            <div class="tab-pane fade" id="nav-more" role="tabpanel" aria-labelledby="nav-more-tab" tabindex="0">...</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
